@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Header from "../Header";
 
-describe("Todo footer", () => {
+describe("Header", () => {
   it("Should render same text passed into title prop", () => {
     render(<Header title={"My Header"} />);
     const headingElement = screen.getByText(/My Header/i); // => get the text inside the tag
